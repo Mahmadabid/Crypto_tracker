@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = () => {
-  const headerStyle: CSSProperties = {
+  const headerStyle = {
     background: 'linear-gradient(to right, black, purple)',
     color: 'white',
     height: '100px',
