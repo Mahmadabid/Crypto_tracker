@@ -1,30 +1,31 @@
 import React from 'react';
+import './styles.css';
 
 const App = () => {
   const headerStyle = {
-      background: 'linear-gradient(to right, black, purple)',
-          color: 'white',
-            };
+    background: 'linear-gradient(to left, black, purple)', // Updated gradient direction
+    color: 'white',
+    height: '100px', // Increase the height of the header
+    lineHeight: '100px', // Vertically center the text within the header
+  };
 
-              const mainStyle = {
-                  background: 'linear-gradient(to right, black, purple)',
-                      color: 'white',
-                        };
+  const containerStyle = {
+    background: 'linear-gradient(to left, black, purple)', // Apply the same gradient to the parent div
+    color: 'white',
+    height: '100vh', // Make the container fill the entire viewport height
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  };
 
-                          return (
-                              <div>
-                                    <header style={headerStyle}>
-                                            <h1>Crypto Tracker</h1>
-                                                  </header>
-                                                        <main style={mainStyle}>
-                                                                {/* Content for the main section of the page */}
-                                                                      </main>
-                                                                            <footer>
-                                                                                    {/* Content for the footer section of the page */}
-                                                                                          </footer>
-                                                                                              </div>
-                                                                                                );
-                                                                                                };
+  return (
+    <div style={containerStyle}>
+      <header style={headerStyle}>
+        <h1>Crypto Tracker</h1>
+      </header>
+    </div>
+  );
+};
 
-                                                                                                export default App;
-                                                                                                
+export default App;
