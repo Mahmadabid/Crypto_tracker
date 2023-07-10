@@ -1,18 +1,17 @@
-import React from 'react';
-import './styles.css';
+import React, { CSSProperties } from 'react';
 
 const App = () => {
-  const headerStyle = {
-    background: 'linear-gradient(to left, black, purple)', // Updated gradient direction
+  const headerStyle: CSSProperties = {
+    background: 'linear-gradient(to right, black, purple)',
     color: 'white',
-    height: '100px', // Increase the height of the header
-    lineHeight: '100px', // Vertically center the text within the header
+    height: '100px',
+    lineHeight: '100px',
   };
 
-  const containerStyle = {
-    background: 'linear-gradient(to left, black, purple)', // Apply the same gradient to the parent div
+  const containerStyle: CSSProperties = {
+    background: 'linear-gradient(to right, black, purple)',
     color: 'white',
-    height: '100vh', // Make the container fill the entire viewport height
+    minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
