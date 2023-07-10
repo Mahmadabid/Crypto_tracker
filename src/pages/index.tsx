@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 
 const App = () => {
   const headerStyle: CSSProperties = {
@@ -6,21 +6,10 @@ const App = () => {
     color: 'white',
     height: '100px',
     lineHeight: '100px',
-  };
-
-  const containerStyle: CSSProperties = {
-    background: 'linear-gradient(to right, black, purple)',
-    color: 'white',
-    minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start', // Update alignItems to flex-start
-    justifyContent: 'center',
-    outline: 'none', // Remove the outline
-  };
+ } 
 
   return (
-    <div style={containerStyle}>
+    <div>
       <header style={headerStyle}>
         <h1>Crypto Tracker</h1>
       </header>
