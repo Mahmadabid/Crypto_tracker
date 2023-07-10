@@ -14,8 +14,9 @@ const App = () => {
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'flex-start', // Update alignItems to flex-start
     justifyContent: 'center',
+    outline: 'none', // Remove the outline
   };
 
   return (
