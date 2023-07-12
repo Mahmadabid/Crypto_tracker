@@ -3,7 +3,7 @@ import React from 'react';
 const App = ({ serverData }) => {
   const { coin } = serverData
 
-  export async function getServerData() {
+  async function getServerData() {
   const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
   const data = await res.json()
 
