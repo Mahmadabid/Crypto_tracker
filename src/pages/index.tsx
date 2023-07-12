@@ -13,6 +13,7 @@ const App = () => {
       <header style={headerStyle}>
         <h1>Crypto Tracker</h1>
       </header>
+
     </div>
   );
 };
