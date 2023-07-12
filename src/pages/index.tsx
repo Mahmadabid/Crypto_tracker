@@ -4,8 +4,8 @@ const App = () => {
   const headerStyle = {
     background: 'linear-gradient(to right, black, purple)',
     color: 'white',
-    height: '100px',
-    lineHeight: '100px',
+    height: '80px',
+    lineHeight: '80px',
  } 
 
   return (
